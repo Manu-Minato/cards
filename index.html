@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+            margin:1rem;
+            color: white;
+            box-shadow: 2px 2px 2px black ;
+            
+        }
+        .navbar{
+            overflow: auto;
+        
+        }
+        .navbar li{
+            float:left;
+            list-style: none;
+            margin: 13px 20px;
+
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            color:bisque;
+        }
+        .search{
+            float: right;
+            color:white;
+            padding: 12px 75px;
+            
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding:3px 17px;
+            width: 129px;
+        }
+        
+         *{
+            margin: 0px;
+            padding: 0px;
+            
+        } 
+        .cards{
+            width: 28%;
+            background-color:#faedcd;
+            border: 5px solid black;
+            margin:140px;
+            box-shadow: 2px 2px 10px;
+            display: inline-block;
+            
+        }
+        .image img{
+            width: 100%;
+        }
+        .title{
+            text-align: center;
+        }
+        .des{
+            text-align: center;
+        }
+        button{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+            border:1px solid black;
+            padding: 6px;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+        }
+        footer{
+            background-color: black;
+            width: 100%;
+            height: 16rem;
+            color: white;
+        }
+        .foot{
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .foot h1{
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            list-style: 3rem;
+        }
+        .foot p{
+            
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
+            width: 3px;
+            
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .socials{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+
+        }
+        .socials li{
+            margin: 0 10px;
+
+        }
+        .socials a{
+            
+            text-decoration: none;
+            color:white;
+            
+
+        }
+        .socials a i{
+            font-size: 1rem;
+            width: 5rem;
+            font-size: 2rem;
+        }
+        
+        .form li a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body style="background-color: #d9ff52;">
+    <header>
+        <nav class="navbar">
+            
+            <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">contact us</a></li>   
+        <div class="search">
+            <input type="text" name="search" id="search" placeholder="Search here">
+        </div>     
+            </ul>
+        </nav>
+    </header>
+       
+    <!-- cards -->
+    <div class="cards">
+        <div class="image">
+            <img src="uzui katana.jpg" alt="">
+        </div>
+        <div class="title">
+            <h3>Tengen Uzui Katana</h3>
+
+        </div>
+        <div class="des">
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+
+    <!-- 2nd card -->
+    <div class="cards">
+        <div class="image">
+            <img src="kunaii.jpg" alt="">
+        </div>
+        <div class="title">
+            <h3>Kunai</h3>
+
+        </div>
+        <div class="des">
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+     <!-- 3rd card -->
+     <div class="cards">
+        <div class="image">
+            <img src="rengoku.jpg" alt="">
+        </div>
+        <div class="title">
+            <h3>Rengoku action figure</h3>
+
+        </div>
+        <div class="des">
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+    <!-- 4th card -->
+    <div class="cards">
+        <div class="image">
+            <img src="fig508-madara-uchiha-gk-5.jpg" alt="">
+        </div>
+        <div class="title">
+            <h3>Madara Uchiha action figure</h3>
+
+        </div>
+        <div class="des">
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+    <footer>
+       <div class="foot">
+        <h1>Otaku Land</h1>
+        <div class="form">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Openings</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+
+        </div>
+        <ul class="socials">
+         <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+         <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+         <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+         <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+         <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+
+        </ul>
+
+        
+        
+       </div>
+       
+       
+    </footer>
+</body>
+</html>
